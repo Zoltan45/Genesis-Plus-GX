@@ -1991,12 +1991,12 @@ void retro_set_input_state(retro_input_state_t cb) { input_state_cb = cb; }
 
 void retro_get_system_info(struct retro_system_info *info)
 {
-   info->library_name = "GPGX - Sega Game Gear";
+   info->library_name = "GPGX - Sega Genesis";
 #ifndef GIT_VERSION
 #define GIT_VERSION ""
 #endif
    info->library_version = "v1.7.4" GIT_VERSION;
-   info->valid_extensions = "gg";
+   info->valid_extensions = "md|smd|gen";
    info->block_extract = false;
    info->need_fullpath = true;
 }
